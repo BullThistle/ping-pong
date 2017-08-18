@@ -35,8 +35,10 @@ function pingPong(arrIn){
 
 function outputPingPong(arrIn){
   for (i = 0; i < arrIn.length; i++ ) {
-      document.write('<li>'  + arrIn[i] + '</li>');
+      arrIn[i] += "<br>";
+
   }
+  return arrIn;
 }
 
 function clicked(event){
@@ -46,8 +48,8 @@ function clicked(event){
   result = pingPong(result);
   result = pong(result);
   result = ping(result);
-  outputPingPong(result);
+  result = outputPingPong(result);
 
   console.log(result);
-  // $("#intOut").html(result);
+  $("#intOut").html(result);
 };
