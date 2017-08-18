@@ -15,8 +15,13 @@ function ping(arrIn){
   return arrIn;
 }
 
-function pong(intIn){
-
+function pong(arrIn){
+  for(var i = 0; i < arrIn.length; i++){
+    if(arrIn[i] % 5 == 0){
+      arrIn[i] = "pong";
+    }
+  }
+  return arrIn;
 }
 
 function pingPong(intIn){
@@ -32,7 +37,7 @@ function clicked(event){
   var intIn = parseInt($("input#intIn").val());
   var result = populate(intIn);
   result = ping(result);
-  // result = pong(result);
+  result = pong(result);
   // result = pingPong(result);
   console.log(result);
 
