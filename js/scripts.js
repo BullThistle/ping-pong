@@ -25,7 +25,12 @@ function pong(arrIn){
 }
 
 function pingPong(intIn){
-
+  for(var i = 0; i < arrIn.length; i++){
+    if(arrIn[i] % 15 == 0){
+      arrIn[i] = "pong";
+    }
+  }
+  return arrIn;
 }
 
 $(document).ready(function() {
@@ -38,7 +43,7 @@ function clicked(event){
   var result = populate(intIn);
   result = ping(result);
   result = pong(result);
-  // result = pingPong(result);
+  result = pingPong(result);
   console.log(result);
 
 
