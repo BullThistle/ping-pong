@@ -5,6 +5,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
     <meta charset="utf-8">
 <title>Ping Pong</title>
         </head>
@@ -12,12 +13,14 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <h1 class="jumbotron">Ping-Pong</h1>
+        <div class="page header">
+          <h1 class="jumbotron">Ping-Pong</h1>
+        </div>
         <div class="form-group">
           <p>Please enter your number: </p>
           <label for="intIn"></label>
           <input id="intIn" class="form-control" type="text">
-          <button type="submit" class="btn" onclick="clicked(event)">Submit!</button>
+          <button type="submit" class="btn-lg" onclick="clicked(event)">Submit!</button>
         </div>
         <p id="intOut"></p>
       </div>
