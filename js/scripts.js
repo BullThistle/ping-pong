@@ -24,26 +24,23 @@ function pong(arrIn){
   return arrIn;
 }
 
-function pingPong(intIn){
+function pingPong(arrIn){
   for(var i = 0; i < arrIn.length; i++){
     if(arrIn[i] % 15 == 0){
-      arrIn[i] = "pong";
+      arrIn[i] = "pingpong";
     }
   }
   return arrIn;
 }
 
-$(document).ready(function() {
-    
-})
-
 function clicked(event){
   event.preventDefault();
   var intIn = parseInt($("input#intIn").val());
   var result = populate(intIn);
-  result = ping(result);
-  result = pong(result);
   result = pingPong(result);
+  result = pong(result);
+  result = ping(result);
+
   console.log(result);
 
 
