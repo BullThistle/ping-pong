@@ -1,4 +1,17 @@
 body {
-    background-color: grey;
+    background-image: url(../images/pingpong.jpg);
     font-family: Archivo;
+}
+
+.header2 {
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: decimal;
+}
+
+.table {
+    background-color: white;
+    color: black;
 }

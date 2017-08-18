@@ -49,7 +49,5 @@ function clicked(event){
   result = pong(result);
   result = ping(result);
   result = outputPingPong(result);
-
-  console.log(result);
   $("#intOut").html(result);
 };
