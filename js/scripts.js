@@ -6,8 +6,13 @@ function populate(intIn){
   return arrOut;
 }
 
-function ping(intIn){
-
+function ping(arrIn){
+  for(var i = 0; i < arrIn.length; i++){
+    if(arrIn[i] % 3 == 0){
+      arrIn[i] = "ping";
+    }
+  }
+  return arrIn;
 }
 
 function pong(intIn){
