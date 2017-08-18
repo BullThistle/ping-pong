@@ -33,6 +33,12 @@ function pingPong(arrIn){
   return arrIn;
 }
 
+function outputPingPong(arrIn){
+  for (i = 0; i < arrIn.length; i++ ) {
+      document.write('<li>'  + arrIn[i] + '</li>');
+  }
+}
+
 function clicked(event){
   event.preventDefault();
   var intIn = parseInt($("input#intIn").val());
@@ -40,10 +46,8 @@ function clicked(event){
   result = pingPong(result);
   result = pong(result);
   result = ping(result);
+  outputPingPong(result);
 
   console.log(result);
-
-
-
-  $("#intOut").html(result);
+  // $("#intOut").html(result);
 };
