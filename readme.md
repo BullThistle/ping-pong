@@ -13,21 +13,24 @@ Numbers divisible by 5 are replaced with "pong"
 Numbers divisible by 15 are replaced with "ping-pong"
 
 ##Specs
+---
+Behavior: It changes multiples of three to "ping"                  
 
-Behavior:                     Input:            Output:
+Input: 3
 
-It changes threes to "ping"   3                 1, 2, ping
+Output: 1, 2, ping
+---
+Behavior: It changes multiples of three to "ping" and multiples of five to "pong".
 
-It changes threes to "ping"
-and fives to pong             5                 1, 2, ping,
-                                                4, pong
+Input: 5
 
-It changes threes to "ping",                    1, 2, ping,
-fives to pong and fifteens                      4, pong,
-to pingpong                                     ping, 7, 8,
-                                                ping, pong,
-                                                11, ping, 13, 14,
-                                                pingpong
+Output: 1, 2, ping, 4, pong
+---
+Behavior: It changes multiples of three to "ping", multiples of five to "pong" and multiples of fifteen to "pingpong"
+
+Input: 15
+
+Output: 1 , 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, pingpong
 
 ## Setup/Installation Requirements              
 
